@@ -1,0 +1,22 @@
+<section class='text-center'>
+  <div class='card shadow-5-strong mt-1'>
+    <div class='card-body'>
+      <div class='row d-flex justify-content-center'>
+        <div class='col-lg-8'>
+          <h2 class='fw-bold mb-5'>Create Event</h2>
+          <%= form_tag(events_path) do |f| %>
+            <div class='row'>
+              <div class="col-md-6">
+                <%= submit_tag 'A', class: 'btn btn-primary btn-block mb-4' %>
+              </div>
+
+              <div class="col-md-6">
+                <%= submit_tag 'B', class: 'btn btn-primary btn-block mb-4' %>
+              </div>
+            </div>
+          <% end %>
+        </div>  
+      </div>
+    </div>
+  </div>
+</section>

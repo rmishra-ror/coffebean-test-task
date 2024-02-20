@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://gydqr.wiremockapi.cloud/api/events/track
+    body:
+      encoding: UTF-8
+      string: '{"email":"tester@yopmail.com","userId":"e51bc75c-82b6-4c73-a5e6-d2756bc0b6f6","eventName":"emailOpen","id":"df09a6e2-28f2-4747-8bb8-434fa38fa566","dataFields":{},"campaignId":"fb99fb56-4013-4bcc-81ac-5cb3b4c220bc","templateId":"4377e501-8f95-4e84-b908-dfec2efee9cd","createNewFields":true}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      X-Access-Token:
+      - 651fd8c9-70e6-45e5-8839-8b3e0d911b92
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '289'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - gydqr.wiremockapi.cloud
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Vary:
+      - Origin
+      Matched-Stub-Id:
+      - bf66718f-b47e-412a-a903-ffcc30f5736c
+      Matched-Stub-Name:
+      - Event Track
+      Content-Length:
+      - '121'
+    body:
+      encoding: ASCII-8BIT
+      string: |
+        {
+          "msg":  "emailOpen event has been created for the tester@yopmail.com address",
+          "code": "Success",
+          "params": {}
+        }
+  recorded_at: Sat, 17 Feb 2024 12:58:08 GMT
+recorded_with: VCR 6.2.0

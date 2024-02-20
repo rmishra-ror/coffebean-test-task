@@ -1,0 +1,28 @@
+<% if @error %>
+  <div class="alert alert-danger">
+    Unable to fetch events please try after sometime.
+  </div> 
+<% else %>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">eventName</th>
+        <th scope="col">eventId</th>
+        <th scope="col">campaignId</th>
+        <th scope="col">templateId</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% events.each_with_index do |event, index| %>
+        <tr>
+          <th><%= index + 1 %></th>
+          <td><%= event['eventName'] %></th>
+          <td><%= event['eventId']%></td>
+          <td><%= event['campaignId'] %></td>
+          <td><%= event['templateId'] %></td>
+        </tr>
+      <% end %>  
+    </tbody>
+  </table>
+<% end %>  

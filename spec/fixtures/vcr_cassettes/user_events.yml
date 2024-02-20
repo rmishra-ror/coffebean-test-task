@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gydqr.wiremockapi.cloud/api/events/tester@yopmail.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.0.0p0
+      X-Access-Token:
+      - 651fd8c9-70e6-45e5-8839-8b3e0d911b92
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - gydqr.wiremockapi.cloud
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Vary:
+      - Origin
+      Matched-Stub-Id:
+      - af70348f-4d70-4c6f-8e71-cc5ac9578848
+      Matched-Stub-Name:
+      - Get Events of  a User by email
+      Content-Length:
+      - '346'
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        {
+          "events": [
+            {
+              "eventName": "emailOpen",
+              "campaignId": "3d85fe99-13c2-4430-a695-a81a28295e61",
+              "templateId": "176dc090-783e-4396-b770-11599a477ef1",
+              "eventId": "17013ef2-079e-4d97-b9ca-6c278dd97677"
+            },
+            {
+              "eventName": "emailBounce",
+              "campaignId": "10fc241b-8df0-45e5-8d46-e9ec79a9cf9d",
+              "templateId": "0ad07097-c1a2-45c7-a2cf-1fa021a072ba",
+              "eventId": "3ab8e435-cc5f-4aa0-b314-c62353350932"
+            },
+            {
+              "eventName": "emailSend",
+              "campaignId": "81d19a36-057f-4757-a780-cdfc09ea9ebd",
+              "templateId": "ad496f4a-a797-40c4-b9eb-7fbd54b33dbd",
+              "eventId": "ab1c0b2f-ff19-451a-8eed-225d639e7928"
+            }
+          ]
+        }
+  recorded_at: Sat, 17 Feb 2024 12:46:48 GMT
+recorded_with: VCR 6.2.0
